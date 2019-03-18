@@ -37,13 +37,13 @@ hr.dark {
 }
 
 a {
-  color: #F05F40;
+  color: #aaaaaa;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
 a:hover {
-  color: #f05f40;
+  color: #ffffff;
 }
 
 h1,
