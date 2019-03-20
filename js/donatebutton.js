@@ -76,7 +76,7 @@ $('#windows-button').on('click', function () {
             var a = document.createElement('a');
             var url = window.URL.createObjectURL(data);
             a.href = url;
-            a.download = 'ToneZ_v1.0.zip';
+            a.download = 'ToneZ_x64_1.0_Setup.zip';
             a.click();
             window.URL.revokeObjectURL(url);
         }
