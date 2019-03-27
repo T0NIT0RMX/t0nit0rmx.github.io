@@ -67,7 +67,7 @@ $("#donatechoice4").on("change keyup paste", function(){
 
 $('#windows-button').on('click', function () {
     $.ajax({
-        url: 'https://t0nit0rmx.github.io/ld/ToneZ_x64_1.0_Setup.zip',
+        url: 'https://t0nit0rmx.github.io/ld/ToneZ_x64_1.0.1_Setup.zip',
         method: 'GET',
         xhrFields: {
             responseType: 'blob'
@@ -76,7 +76,7 @@ $('#windows-button').on('click', function () {
             var a = document.createElement('a');
             var url = window.URL.createObjectURL(data);
             a.href = url;
-            a.download = 'ToneZ_x64_1.0_Setup.zip';
+            a.download = 'ToneZ_x64_1.0.1_Setup.zip';
             a.click();
             window.URL.revokeObjectURL(url);
         }
