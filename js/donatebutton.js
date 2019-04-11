@@ -141,3 +141,7 @@ $('#macau-button').on('click', function () {
         }
     });
 });
+
+function delay (URL) {
+    setTimeout( function() { window.location = URL }, 5000 );
+}
