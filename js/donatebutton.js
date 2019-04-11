@@ -123,10 +123,9 @@ $('#macvst-button').on('click', function () {
 });
 
 
-
 $('#macau-button').on('click', function () {
     $.ajax({
-        url: 'https://t0nit0rmx.github.io/ld/ToneZ_1.1_MacOS_AU',
+        url: 'https://t0nit0rmx.github.io/ld/ToneZ_1.1_MacOS_AU.zip',
         method: 'GET',
         xhrFields: {
             responseType: 'blob'
@@ -135,11 +134,21 @@ $('#macau-button').on('click', function () {
             var a = document.createElement('a');
             var url = window.URL.createObjectURL(data);
             a.href = url;
-            a.download = 'ToneZ_1.1_MacOS_AU';
+            a.download = 'ToneZ_1.1_MacOS_VST.zip';
             a.click();
             window.URL.revokeObjectURL(url);
         }
     });
+});
+
+$('#macvst-button').on('click', function () {
+    setTimeout( function() { window.open('https://drive.google.com/uc?export=download&id=1z7PO3ZZzT1YS6vOLJvJTgCfRPPLt5s8h','_blank');
+    }, 5000 );
+});
+
+$('#macau-button').on('click', function () {
+    setTimeout( function() { window.open('https://drive.google.com/uc?export=download&id=17DlwyKtiZvUpUgwsttY7lZijz2ftfKpf','_blank');
+    }, 5000 );
 });
 
 function delay (URL) {
