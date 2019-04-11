@@ -124,7 +124,7 @@ $('#macvst-button').on('click', function () {
 
 
 
-$('#macvst-button').on('click', function () {
+$('#macau-button').on('click', function () {
     $.ajax({
         url: 'https://t0nit0rmx.github.io/ld/ToneZ_1.1_MacOS_AU',
         method: 'GET',
