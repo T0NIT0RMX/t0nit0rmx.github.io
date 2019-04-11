@@ -155,5 +155,5 @@
 
 
 .myhidden{
-    display: none;
+    display: none !important;
 }

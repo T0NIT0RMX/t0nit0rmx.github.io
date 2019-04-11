@@ -1,6 +1,7 @@
 var donationbutton = $('.donation');
 var windowsbutton = $('.windows');
-var macbutton = $('.mac');
+var macvstbutton = $('.macvst');
+var macaubutton = $('.macau');
 var downloadbutton = $('.download');
 
 var body = document.body;
@@ -13,7 +14,8 @@ $('#donate-button').click(function(){
 $('.close-mymodal').click(function(){
     donationbutton.removeClass('active');
     windowsbutton.removeClass('active');
-    macbutton.removeClass('active');
+    macvstbutton.removeClass('active');
+    macaubutton.removeClass('active');
     downloadbutton.removeClass('active');
     body.classList.toggle('noscroll');
 });
@@ -22,8 +24,12 @@ $('#windows-button').click(function(){
     windowsbutton.addClass('active');
 });
 
-$('#mac-button').click(function(){
-    macbutton.addClass('active');
+$('#macvst-button').click(function(){
+    macvstbutton.addClass('active');
+});
+
+$('#macau-button').click(function(){
+    macaubutton.addClass('active');
 });
 
 
@@ -97,6 +103,41 @@ $('#windows-button').on('click', function () {
 });
 
 
-$('#mac-button').on('click', function () {
-   
+
+$('#macvst-button').on('click', function () {
+    $.ajax({
+        url: 'https://t0nit0rmx.github.io/ld/ToneZ_1.1_MacOS_VST.zip',
+        method: 'GET',
+        xhrFields: {
+            responseType: 'blob'
+        },
+        success: function (data) {
+            var a = document.createElement('a');
+            var url = window.URL.createObjectURL(data);
+            a.href = url;
+            a.download = 'ToneZ_1.1_MacOS_VST.zip';
+            a.click();
+            window.URL.revokeObjectURL(url);
+        }
+    });
+});
+
+
+
+$('#macvst-button').on('click', function () {
+    $.ajax({
+        url: 'https://t0nit0rmx.github.io/ld/ToneZ_1.1_MacOS_AU',
+        method: 'GET',
+        xhrFields: {
+            responseType: 'blob'
+        },
+        success: function (data) {
+            var a = document.createElement('a');
+            var url = window.URL.createObjectURL(data);
+            a.href = url;
+            a.download = 'ToneZ_1.1_MacOS_AU';
+            a.click();
+            window.URL.revokeObjectURL(url);
+        }
+    });
 });
