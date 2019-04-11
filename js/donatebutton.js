@@ -1,5 +1,7 @@
 var donationbutton = $('.donation');
 var windowsbutton = $('.windows');
+var macbutton = $('.mac');
+var downloadbutton = $('.download');
 
 var body = document.body;
 
@@ -11,11 +13,22 @@ $('#donate-button').click(function(){
 $('.close-mymodal').click(function(){
     donationbutton.removeClass('active');
     windowsbutton.removeClass('active');
+    macbutton.removeClass('active');
+    downloadbutton.removeClass('active');
     body.classList.toggle('noscroll');
 });
 
 $('#windows-button').click(function(){
     windowsbutton.addClass('active');
+});
+
+$('#mac-button').click(function(){
+    macbutton.addClass('active');
+});
+
+
+$('#download-button').click(function(){
+    downloadbutton.addClass('active');
     body.classList.toggle('noscroll');
 });
 
@@ -67,7 +80,7 @@ $("#donatechoice4").on("change keyup paste", function(){
 
 $('#windows-button').on('click', function () {
     $.ajax({
-        url: 'https://t0nit0rmx.github.io/ld/ToneZ_x64_1.0.1_Setup.zip',
+        url: 'https://t0nit0rmx.github.io/ld/ToneZ_x64_1.1_Setup.zip',
         method: 'GET',
         xhrFields: {
             responseType: 'blob'
@@ -76,7 +89,26 @@ $('#windows-button').on('click', function () {
             var a = document.createElement('a');
             var url = window.URL.createObjectURL(data);
             a.href = url;
-            a.download = 'ToneZ_x64_1.0.1_Setup.zip';
+            a.download = 'ToneZ_x64_1.1_Setup.zip';
+            a.click();
+            window.URL.revokeObjectURL(url);
+        }
+    });
+});
+
+
+$('#mac-button').on('click', function () {
+    $.ajax({
+        url: 'https://docs.google.com/uc?export=download&id=1ZOzJs_LNv3rCeGkkYtfTgEUlEuXpNF95',
+        method: 'GET',
+        xhrFields: {
+            responseType: 'blob'
+        },
+        success: function (data) {
+            var a = document.createElement('a');
+            var url = window.URL.createObjectURL(data);
+            a.href = url;
+            a.download = 'ToneZ_1.1.zip';
             a.click();
             window.URL.revokeObjectURL(url);
         }

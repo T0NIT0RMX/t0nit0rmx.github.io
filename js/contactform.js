@@ -76,6 +76,7 @@ var $form = $('form#test-form'),
 
 $('#submit-form').on('click', function(e) {
     $('.loadring').toggleClass( "lds-ring" )
+    document.getElementById("submit-form").innerHTML = "Sending..."
   e.preventDefault();
   var resetBtn = document.getElementById("submit-form");
     resetBtn.disabled = true;
@@ -103,7 +104,7 @@ $('#submit-form').on('click', function(e) {
     complete: function (data) {
       document.getElementById("test-form").reset();
         $('.loadring').toggleClass( "lds-ring" )
-        document.getElementById("submit-form").innerHTML = "Submitted successfuly"
+        document.getElementById("submit-form").innerHTML = "Sent successfuly"
         setTimeout(suiteTraitement, 5000)
         
      }
@@ -114,7 +115,7 @@ function suiteTraitement()
 {
     var resetBtn = document.getElementById("submit-form");
     resetBtn.disabled = false;
-        document.getElementById("submit-form").innerHTML = "Submit"
+        document.getElementById("submit-form").innerHTML = "Send"
 }
 
 

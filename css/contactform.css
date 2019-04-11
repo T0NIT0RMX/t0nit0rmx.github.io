@@ -327,8 +327,8 @@ textarea.input2 + .focus-input2::after {
 .lds-ring {
   display: inline-block;
   position: relative;
-  width: 64px;
-  height: 64px;
+  width: 32px;
+  height: 32px;
 }
 .lds-ring div {
   box-sizing: border-box;
