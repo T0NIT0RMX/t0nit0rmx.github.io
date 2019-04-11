@@ -98,19 +98,5 @@ $('#windows-button').on('click', function () {
 
 
 $('#mac-button').on('click', function () {
-    $.ajax({
-        url: 'https://docs.google.com/uc?export=download&id=1ZOzJs_LNv3rCeGkkYtfTgEUlEuXpNF95',
-        method: 'GET',
-        xhrFields: {
-            responseType: 'blob'
-        },
-        success: function (data) {
-            var a = document.createElement('a');
-            var url = window.URL.createObjectURL(data);
-            a.href = url;
-            a.download = 'ToneZ_1.1.zip';
-            a.click();
-            window.URL.revokeObjectURL(url);
-        }
-    });
+   
 });
