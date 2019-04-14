@@ -1,7 +1,8 @@
 var donationbutton = $('.donation');
 var windowsbutton = $('.windows');
-var macvstbutton = $('.macvst');
-var macaubutton = $('.macau');
+// var macvstbutton = $('.macvst');
+// var macaubutton = $('.macau');
+var macbutton = $('.mac');
 var downloadbutton = $('.download');
 
 var body = document.body;
@@ -14,8 +15,9 @@ $('#donate-button').click(function(){
 $('.close-mymodal').click(function(){
     donationbutton.removeClass('active');
     windowsbutton.removeClass('active');
-    macvstbutton.removeClass('active');
-    macaubutton.removeClass('active');
+    // macvstbutton.removeClass('active');
+    // macaubutton.removeClass('active');
+    macbutton.removeClass('active');
     downloadbutton.removeClass('active');
     body.classList.toggle('noscroll');
 });
@@ -24,12 +26,16 @@ $('#windows-button').click(function(){
     windowsbutton.addClass('active');
 });
 
-$('#macvst-button').click(function(){
-    macvstbutton.addClass('active');
-});
+// $('#macvst-button').click(function(){
+    // macvstbutton.addClass('active');
+// });
 
-$('#macau-button').click(function(){
-    macaubutton.addClass('active');
+// $('#macau-button').click(function(){
+    // macaubutton.addClass('active');
+// });
+
+$('#mac-button').click(function(){
+    macbutton.addClass('active');
 });
 
 
@@ -86,7 +92,7 @@ $("#donatechoice4").on("change keyup paste", function(){
 
 $('#windows-button').on('click', function () {
     $.ajax({
-        url: 'https://t0nit0rmx.github.io/ld/ToneZ_x64_1.1_Setup.zip',
+        url: 'https://t0nit0rmx.github.io/ld/ToneZ_x64_1.1.1_Setup.zip',
         method: 'GET',
         xhrFields: {
             responseType: 'blob'
@@ -95,7 +101,7 @@ $('#windows-button').on('click', function () {
             var a = document.createElement('a');
             var url = window.URL.createObjectURL(data);
             a.href = url;
-            a.download = 'ToneZ_x64_1.1_Setup.zip';
+            a.download = 'ToneZ_x64_1.1.1_Setup.zip';
             a.click();
             window.URL.revokeObjectURL(url);
         }
@@ -104,50 +110,57 @@ $('#windows-button').on('click', function () {
 
 
 
-$('#macvst-button').on('click', function () {
-    $.ajax({
-        url: 'https://t0nit0rmx.github.io/ld/ToneZ_1.1_MacOS_VST.zip',
-        method: 'GET',
-        xhrFields: {
-            responseType: 'blob'
-        },
-        success: function (data) {
-            var a = document.createElement('a');
-            var url = window.URL.createObjectURL(data);
-            a.href = url;
-            a.download = 'ToneZ_1.1_MacOS_VST.zip';
-            a.click();
-            window.URL.revokeObjectURL(url);
-        }
-    });
-});
+// $('#macvst-button').on('click', function () {
+    // $.ajax({
+        // url: 'https://t0nit0rmx.github.io/ld/ToneZ_1.1_MacOS_VST.zip',
+        // method: 'GET',
+        // xhrFields: {
+            // responseType: 'blob'
+        // },
+        // success: function (data) {
+            // var a = document.createElement('a');
+            // var url = window.URL.createObjectURL(data);
+            // a.href = url;
+            // a.download = 'ToneZ_1.1_MacOS_VST.zip';
+            // a.click();
+            // window.URL.revokeObjectURL(url);
+        // }
+    // });
+// });
 
 
-$('#macau-button').on('click', function () {
-    $.ajax({
-        url: 'https://t0nit0rmx.github.io/ld/ToneZ_1.1_MacOS_AU.zip',
-        method: 'GET',
-        xhrFields: {
-            responseType: 'blob'
-        },
-        success: function (data) {
-            var a = document.createElement('a');
-            var url = window.URL.createObjectURL(data);
-            a.href = url;
-            a.download = 'ToneZ_1.1_MacOS_VST.zip';
-            a.click();
-            window.URL.revokeObjectURL(url);
-        }
-    });
-});
+// $('#macau-button').on('click', function () {
+    // $.ajax({
+        // url: 'https://t0nit0rmx.github.io/ld/ToneZ_1.1_MacOS_AU.zip',
+        // method: 'GET',
+        // xhrFields: {
+            // responseType: 'blob'
+        // },
+        // success: function (data) {
+            // var a = document.createElement('a');
+            // var url = window.URL.createObjectURL(data);
+            // a.href = url;
+            // a.download = 'ToneZ_1.1_MacOS_VST.zip';
+            // a.click();
+            // window.URL.revokeObjectURL(url);
+        // }
+    // });
+// });
 
-$('#macvst-button').on('click', function () {
-    setTimeout( function() { window.open('https://drive.google.com/uc?export=download&id=1z7PO3ZZzT1YS6vOLJvJTgCfRPPLt5s8h','_blank');
-    }, 5000 );
-});
 
-$('#macau-button').on('click', function () {
-    setTimeout( function() { window.open('https://drive.google.com/uc?export=download&id=17DlwyKtiZvUpUgwsttY7lZijz2ftfKpf','_blank');
+// $('#macvst-button').on('click', function () {
+    // setTimeout( function() { window.open('https://drive.google.com/uc?export=download&id=1z7PO3ZZzT1YS6vOLJvJTgCfRPPLt5s8h','_blank');
+    // }, 5000 );
+// });
+
+// $('#macau-button').on('click', function () {
+    // setTimeout( function() { window.open('https://drive.google.com/uc?export=download&id=17DlwyKtiZvUpUgwsttY7lZijz2ftfKpf','_blank');
+    // }, 5000 );
+// });
+
+
+$('#mac-button').on('click', function () {
+    setTimeout( function() { window.open('https://drive.google.com/uc?export=download&id=1y2Bq1OVWE6Um-wKdZ7LALRYtAufE1Cz8','_blank');
     }, 5000 );
 });
 
