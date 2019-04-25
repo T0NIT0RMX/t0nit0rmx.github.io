@@ -154,6 +154,11 @@
 }
 
 
+.btn-large-style {
+    width :300px;
+}
+
+
 .myhidden{
     display: none !important;
 }
