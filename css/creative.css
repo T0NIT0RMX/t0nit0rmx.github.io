@@ -86,6 +86,11 @@ h6 {
   min-height: 70vh;
 }
 
+.section-ultrafullpage {
+  min-height: 95vh;
+}
+
+
 
 
 .bg-dark {
