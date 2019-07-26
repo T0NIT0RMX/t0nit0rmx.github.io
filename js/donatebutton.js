@@ -160,7 +160,7 @@ $('#windows-button').on('click', function () {
 
 
 $('#mac-button').on('click', function () {
-    setTimeout( function() { window.open('https://drive.google.com/uc?export=download&id=1rYHf1qQPhLUQbUnH9E26X1eqXlFp5CPH','_blank');
+    setTimeout( function() { window.open('https://drive.google.com/uc?id=1RhXqa-J1ACCXjgfqeIoEKH-XISGlZ69K&export=download','_blank');
     }, 5000 );
 });
 
