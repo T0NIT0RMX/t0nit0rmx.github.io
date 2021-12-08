@@ -92,7 +92,7 @@ $("#donatechoice4").on("change keyup paste", function(){
 
 $('#windows-button').on('click', function () {
     $.ajax({
-        url: 'https://retornz.com/ld/ToneZ_x64_1.3_Setup.zip',
+        url: 'https://www.retornz.com/ld/ToneZ_x64_1.3_Setup.zip',
         method: 'GET',
         xhrFields: {
             responseType: 'blob'
@@ -112,7 +112,7 @@ $('#windows-button').on('click', function () {
 
 // $('#macvst-button').on('click', function () {
     // $.ajax({
-        // url: 'https://retornz.com/ld/ToneZ_1.1_MacOS_VST.zip',
+        // url: 'https://www.retornz.com/ld/ToneZ_1.1_MacOS_VST.zip',
         // method: 'GET',
         // xhrFields: {
             // responseType: 'blob'
@@ -131,7 +131,7 @@ $('#windows-button').on('click', function () {
 
 // $('#macau-button').on('click', function () {
     // $.ajax({
-        // url: 'https://retornz.com/ld/ToneZ_1.1_MacOS_AU.zip',
+        // url: 'https://www.retornz.com/ld/ToneZ_1.1_MacOS_AU.zip',
         // method: 'GET',
         // xhrFields: {
             // responseType: 'blob'
