@@ -1,10 +1,4 @@
 var donationbutton = $('.donation');
-var windowsbutton = $('.windows');
-// var macvstbutton = $('.macvst');
-// var macaubutton = $('.macau');
-var macbutton = $('.mac');
-var downloadbutton = $('.download');
-
 var body = document.body;
 
 $('#donate-button').click(function(){
@@ -14,35 +8,9 @@ $('#donate-button').click(function(){
 
 $('.close-mymodal').click(function(){
     donationbutton.removeClass('active');
-    windowsbutton.removeClass('active');
-    // macvstbutton.removeClass('active');
-    // macaubutton.removeClass('active');
-    macbutton.removeClass('active');
-    downloadbutton.removeClass('active');
     body.classList.toggle('noscroll');
 });
 
-$('#windows-button').click(function(){
-    windowsbutton.addClass('active');
-});
-
-// $('#macvst-button').click(function(){
-    // macvstbutton.addClass('active');
-// });
-
-// $('#macau-button').click(function(){
-    // macaubutton.addClass('active');
-// });
-
-$('#mac-button').click(function(){
-    macbutton.addClass('active');
-});
-
-
-$('#download-button').click(function(){
-    downloadbutton.addClass('active');
-    body.classList.toggle('noscroll');
-});
 
 
 $('#donatechoice1').click(function(){
@@ -89,84 +57,3 @@ $("#donatechoice4").on("change keyup paste", function(){
 })
 
 
-
-$('#windows-button').on('click', function () {
-    $.ajax({
-        url: 'https://www.retornz.com/ld/ToneZ_x64_1.3_Setup.zip',
-        method: 'GET',
-        xhrFields: {
-            responseType: 'blob'
-        },
-        success: function (data) {
-            var a = document.createElement('a');
-            var url = window.URL.createObjectURL(data);
-            a.href = url;
-            a.download = 'ToneZ_x64_1.3_Setup.zip';
-            a.click();
-            window.URL.revokeObjectURL(url);
-        }
-    });
-});
-
-
-
-// $('#macvst-button').on('click', function () {
-    // $.ajax({
-        // url: 'https://www.retornz.com/ld/ToneZ_1.1_MacOS_VST.zip',
-        // method: 'GET',
-        // xhrFields: {
-            // responseType: 'blob'
-        // },
-        // success: function (data) {
-            // var a = document.createElement('a');
-            // var url = window.URL.createObjectURL(data);
-            // a.href = url;
-            // a.download = 'ToneZ_1.1_MacOS_VST.zip';
-            // a.click();
-            // window.URL.revokeObjectURL(url);
-        // }
-    // });
-// });
-
-
-// $('#macau-button').on('click', function () {
-    // $.ajax({
-        // url: 'https://www.retornz.com/ld/ToneZ_1.1_MacOS_AU.zip',
-        // method: 'GET',
-        // xhrFields: {
-            // responseType: 'blob'
-        // },
-        // success: function (data) {
-            // var a = document.createElement('a');
-            // var url = window.URL.createObjectURL(data);
-            // a.href = url;
-            // a.download = 'ToneZ_1.1_MacOS_VST.zip';
-            // a.click();
-            // window.URL.revokeObjectURL(url);
-        // }
-    // });
-// });
-
-
-// $('#macvst-button').on('click', function () {
-    // setTimeout( function() { window.open('https://drive.google.com/uc?export=download&id=1z7PO3ZZzT1YS6vOLJvJTgCfRPPLt5s8h','_blank');
-    // }, 5000 );
-// });
-
-// $('#macau-button').on('click', function () {
-    // setTimeout( function() { window.open('https://drive.google.com/uc?export=download&id=17DlwyKtiZvUpUgwsttY7lZijz2ftfKpf','_blank');
-    // }, 5000 );
-// });
-
-
-$('#mac-button').on('click', function () {
-    setTimeout( function() { window.open('https://drive.google.com/uc?id=1RhXqa-J1ACCXjgfqeIoEKH-XISGlZ69K&export=download','_blank');
-    }, 5000 );
-});
-
-function delay (URL) {
-    setTimeout( function() { window.open(
-  URL,
-  '_blank'
-); }, 5000 );
-}
