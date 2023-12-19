@@ -6,6 +6,13 @@ $('#donate-button').click(function(){
     body.classList.toggle('noscroll');
 });
 
+$('#donate-button2').click(function(){
+    donationbutton.addClass('active');
+	tonezv2_downloadbutton.removeClass('active');
+    tonezv2_univpopup.removeClass('active');
+    body.classList.toggle('noscroll');
+});
+
 $('.close-mymodal').click(function(){
     donationbutton.removeClass('active');
     body.classList.toggle('noscroll');

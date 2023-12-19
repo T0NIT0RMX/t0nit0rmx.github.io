@@ -25,6 +25,8 @@ $('#tonezv1-download-button').click(function(){
 });
 
 
+
+
 $('#tonezv1-windows-button').on('click', function () {
     $.ajax({
         url: 'https://www.retornz.com/ld/ToneZ_x64_1.3_Setup.zip',

@@ -1,0 +1,118 @@
+.section-fullscreen {
+  height:100%;
+}
+
+.container-max {
+	max-width:70%;
+}
+
+.container-left {
+	padding-left:0;
+}
+
+
+
+.video-high {
+	max-height: 600px;
+  min-height: 400px;
+}
+
+.btn-tonezdl {
+	background-color:#007bff;
+	border-color:transparent;
+}
+
+.btn-tonezdon {
+	background-color:#ffa500;
+	border-color:transparent;
+}
+
+
+.btn-nooutline {
+	border-color:transparent;
+}
+
+.btn-smooth {
+	border-radius: 5px;
+}
+
+@font-face {
+  font-family: 'Revalia';
+  src: url(https://fonts.googleapis.com/css2?family=Rubik);
+}
+
+.newFont {
+  font-family: 'Rubik';
+}
+
+.padding-header-top {
+  padding: 12rem 0;
+}
+
+.countdownText{
+	font-size: 1.5em;
+	font-weight: 800;
+}
+
+.manualDownload-text{
+	font-size: 1.1em;
+	font-weight: 300;
+	display: none;
+}
+
+.pleaseWait-text{
+	font-size: 1.1em;
+	font-weight: 300;
+	display: none;
+}
+
+
+.bigmodal {
+	width: 60%;
+}
+.bigmodal2 {
+	width: 65%;
+}
+
+
+.no-link {
+	cursor:default !important;
+}
+
+.overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0;
+	transition: opacity 0.2s ease-in-out;
+	background: black;
+}
+
+.content{
+	position: aboslute;
+	top: 50%;
+	left: 50%
+	transform: translate(-50%, -50%);
+	color: white;
+	text-align: center;
+}
+
+.image-container:hover .overlay{
+	opacity: 0.8;
+}
+
+.vertalign
+{
+	position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  width: 200px;
+  height: 200px;
+}
+
+
+
+
+
